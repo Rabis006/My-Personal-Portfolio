@@ -1,0 +1,679 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    /* Dark background */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navigation Bar */
+  .nav {
+    background-color: black;
+    padding: 15px 30px;
+  }
+  
+  /* Flexbox for Alignment */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 15px 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: top 0.3s;
+  }
+  
+  .hidden {
+    top: -70px;
+  }
+  
+  /* Left Side Name */
+  .nav-name {
+    padding-left: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    color: yellow;
+    /* Yellow Text */
+  }
+  
+  /* Navigation Links */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Wrap links in a container for better control */
+  .nav-links {
+    display: flex;
+    gap: 70px;
+    padding-right: 50px;
+    /* Adjust this to control spacing */
+  }
+  
+  /* Hover Effect */
+  .navbar a:hover {
+    color: yellow;
+  }
+  
+  /* Basic reset (optional) */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Hero section container */
+  #hero {
+    display: flex;
+    /* Side-by-side layout */
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    /* Add spacing as needed */
+    background-color: #0c0c0c;
+    /* Example background color */
+    min-height: 100vh;
+    /* Fill viewport height if you want */
+  }
+  
+  /* Left text section */
+  .hero-text {
+    padding-left: 30px;
+    color: #fff;
+    max-width: 600px;
+    /* Adjust as needed */
+  }
+  
+  .hero span {
+    color: yellow;
+    font-size: 70px;
+  }
+  
+  /* Style for the heading and paragraph */
+  .hero-text h1 {
+    font-size: 60px;
+    /* Adjust for desired size */
+    margin-bottom: 40px;
+  }
+  
+  .hero-text p {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  
+  /* Button styling */
+  .btn {
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: yellow;
+    background: transparent;
+    border: 2px solid yellow;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: yellow;
+    color: black;
+    transform: translateY(-2px);
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Right image section */
+  .hero-image img {
+    max-width: 500px;
+    /* Adjust size to fit your layout */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* Optional rounding corners */
+    padding-right: 30px;
+  }
+  
+  /* Container for the icons, placed below the Resume button */
+  .social-icons {
+    margin-top: 50px;
+    /* Space above icons */
+    display: flex;
+    gap: 40px;
+    /* Space between each icon */
+  }
+  
+  /* Style for each icon link */
+  .social-icons a {
+    color: yellow;
+    /* Same color as your button text (adjust as desired) */
+    font-size: 3.5rem;
+    /* Adjust icon size */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Hover effect */
+  .social-icons a:hover {
+    color: #fff;
+    /* Switch to white on hover (or pick another color) */
+  }
+  
+  * About Section */ #about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 80px;
+    /* Space for fixed navbar */
+  }
+  
+  /* About Section */
+  #about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 80px;
+    /* Space for fixed navbar */
+    background: radial-gradient(#0c0c0c);
+    /* Gradient background */
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .about-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid yellow;
+    box-shadow: 0px 4px 10px rgba(255, 255, 0, 0.5);
+  }
+  
+  .about-text {
+    margin-left: 50px;
+    color: white;
+    padding-left: 250px;
+    font-size: 25px;
+  }
+  
+  .about-text h2 {
+    font-size: 28px;
+    color: cyan;
+    border-bottom: 3px solid yellow;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .about-text span {
+    color: yellow;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 10px;
+  }
+  
+  /* Education Section */
+  #education {
+    background: radial-gradient(circle, #0c0c0c);
+    color: white;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    color: cyan;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+  }
+  
+  /* Education Container */
+  .education-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Left Side - Education Details */
+  .education-details {
+    width: 50%;
+  }
+  
+  .education-box {
+    background: #111;
+    border-left: 5px solid yellow;
+    padding: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+    border-radius: 5px;
+  }
+  
+  .education-box h3 {
+    color: orange;
+    font-size: 18px;
+  }
+  
+  .education-box h2 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: white;
+  }
+  
+  .education-box p {
+    color: #ddd;
+    font-size: 16px;
+  }
+  
+  /* Right Side - Education Image */
+  .education-image {
+    width: 40%;
+  }
+  
+  .education-image img {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /*  Slills Section Title */
+  .skills-title {
+    background-color: #0c0c0c;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #00ffcc;
+  }
+  
+  /* Skills Container */
+  .skills-container {
+    background-color: #0c0c0c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  /* Skill Category */
+  .skill-category {
+    margin-top: 40px;
+    background: rgba(0, 0, 0, 0.877);
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    min-width: 300px;
+    padding-bottom: 60px;
+  }
+  
+  /* Skill Category Titles */
+  .skill-category h2 {
+    font-size: 1.5em;
+    color: orange;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  /* Skill Item */
+  .skill {
+    margin-bottom: 15px;
+    text-align: left;
+    color: white;
+  }
+  
+  .skill p {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+  
+  /* Progress Bar */
+  .progress {
+    width: 100%;
+    background: #1e1e2a;
+    border-radius: 5px;
+    height: 8px;
+    overflow: hidden;
+  }
+  
+  /* Progress Bar Fill */
+  .progress-bar {
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  /* Progress Bar (Frontend & Programming) */
+  .pink {
+    background: linear-gradient(90deg, yellow);
+  }
+  
+  /* Blue Progress Bar (Backend, DSA, Databases) */
+  .blue {
+    background: linear-gradient(90deg, #00bcd4, #007acc);
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .skills-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .skill-category {
+      width: 90%;
+    }
+  }
+  
+  /* Contact Section */
+  .section-title {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 40px;
+    width: 100%;
+    display: block;
+  }
+  
+  /* Add an underline */
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 80px; /* Adjust width as needed */
+    height: 3px;
+    background: orange;
+    margin: 8px auto 0;
+  }
+  
+  #contact {
+    padding: 50px 10%;
+    background-color: #0c0c0c;
+  }
+  /* Contact Container */
+  .contact-container {
+    display: flex;
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Left Side: Contact Form */
+  .contact-form {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+    color: orange;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #878585;
+    background: transparent;
+    color: white;
+    outline: none;
+  }
+  
+  .contact-form button {
+    background: orange;
+    border: none;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .contact-form button:hover {
+    background: darkorange;
+  }
+  
+  /* Right Side: Contact Information */
+  .contact-info {
+    flex: 1;
+    padding: 40px;
+    background: black;
+  }
+  
+  .contact-info h2 {
+    margin-bottom: 40px;
+    color: orange;
+  }
+  
+  .contact-info p {
+    margin: 40px 0;
+    color: white;
+  }
+  
+  .contact-info i {
+    color: orange;
+    margin-right: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+    }
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media screen and (max-width: 1200px) {
+    .hero-text h1 {
+      font-size: 50px;
+    }
+    
+    .hero-text p {
+      font-size: 24px;
+    }
+    
+    .hero span {
+      font-size: 60px;
+    }
+    
+    .social-icons a {
+      font-size: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    #hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px 20px;
+    }
+  
+    .hero-text {
+      padding-left: 0;
+      margin-bottom: 40px;
+    }
+  
+    .hero-image img {
+      padding-right: 0;
+      max-width: 400px;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .about-image {
+      margin-bottom: 30px;
+    }
+  
+    .about-text {
+      padding: 0;
+    }
+  
+    .education-container {
+      flex-direction: column-reverse;
+      padding: 20px;
+    }
+  
+    .education-image {
+      margin-bottom: 30px;
+    }
+  
+    .education-details {
+      width: 100%;
+    }
+  
+    .skills-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding: 10px 0;
+    }
+  
+    .nav-name {
+      padding-left: 20px;
+      font-size: 20px;
+    }
+  
+    .nav-links {
+      display: none;
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      flex-direction: column;
+      gap: 0;
+      padding: 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links a {
+      padding: 15px 20px;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  
+    .hero-text h1 {
+      font-size: 40px;
+    }
+  
+    .hero span {
+      font-size: 50px;
+    }
+  
+    .skills-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .skill-category {
+      padding: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .hero-text h1 {
+      font-size: 32px;
+    }
+  
+    .hero span {
+      font-size: 40px;
+    }
+  
+    .hero-text p {
+      font-size: 20px;
+    }
+  
+    .btn {
+      padding: 8px 30px;
+      font-size: 14px;
+    }
+  
+    .social-icons {
+      gap: 25px;
+    }
+  
+    .social-icons a {
+      font-size: 2.5rem;
+    }
+  
+    .about-image img,
+    .hero-image img,
+    .education-image img {
+      max-width: 100%;
+    }
+  
+    .education-box {
+      padding: 15px;
+    }
+  
+    .education-box h2 {
+      font-size: 18px;
+    }
+  
+    .education-box h3 {
+      font-size: 16px;
+    }
+  }
+  
+  /* Add hamburger menu for mobile */
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: yellow;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  }
