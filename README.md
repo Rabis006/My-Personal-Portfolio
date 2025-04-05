@@ -2,12 +2,6 @@
 
 This is my personal portfolio website showcasing my education, projects, and skills as a developer. Built using *HTML, CSS, and JavaScript*, this site is fully responsive and visually appealing.
 
-## 📌 Live Demo  
-[Check out my portfolio here!](#) (Add your hosted portfolio link here)  
-
-## 📷 Preview  
-(Insert a screenshot of your portfolio here if available)  
-
 ## 🚀 Features  
 
 ✅ Clean and modern UI  
@@ -61,7 +55,7 @@ You can deploy this portfolio using:
 
 👤 *Ravi Sharma*  
 📧 Email: [ravisharmaa032@gmail.com] 
-🔗 LinkedIn: [https://www.linkedin.com/in/ravi-sharma-4ab511229 ](#)  
+🔗 LinkedIn: [https://www.linkedin.com/in/ravi-sharma-4ab511229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app ](#)  
 🐙 GitHub: [Your GitHub Profile](#)  
 
 ---
