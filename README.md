@@ -55,7 +55,7 @@ You can deploy this portfolio using:
 
 👤 *Ravi Sharma*  
 📧 Email: [ravisharmaa032@gmail.com] 
-🔗 LinkedIn: [https://www.linkedin.com/in/ravi-sharma-4ab511229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app ](#)  
+🔗 LinkedIn: [https://www.linkedin.com/in/ravi-sharma-4ab511229/](#)  
 🐙 GitHub: [Your GitHub Profile](#)  
 
 ---
